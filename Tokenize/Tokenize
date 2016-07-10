@@ -1,0 +1,4 @@
+grunt> A = LOAD '/Sourabh/Session8/PigDemo/Session8Assignment2' AS (f1:int, f2:chararray, f3:long);
+grunt> B = FOREACH A GENERATE TOKENIZE(f2);
+grunt> DUMP B;
+

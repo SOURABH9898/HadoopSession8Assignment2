@@ -1,0 +1,4 @@
+grunt> A = LOAD '/Sourabh/Session8/PigDemo/Session8Assignment2' AS (f1:int, f2:chararray, f3:chararray);
+grunt> B = FOREACH A GENERATE CONCAT(f3,f2);
+grunt> dump B;
+

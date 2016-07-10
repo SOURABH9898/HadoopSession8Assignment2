@@ -1,0 +1,3 @@
+grunt> A = LOAD '/Sourabh/Session8/PigDemo/Session8Assignment2' as (f1:int, f2:chararray, f3:long);
+grunt> B = FOREACH A GENERATE FLATTEN(f2) as names;
+grunt> DUMP B;
